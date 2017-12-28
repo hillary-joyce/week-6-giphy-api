@@ -1,0 +1,26 @@
+.new-gif-div {
+  position: relative;
+  display: inline-block;
+}
+.gif-rating {
+  width: 80px;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.gif-image {
+  margin: 5px;
+}
+
+.search-div, .results-div {
+  background: black;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
