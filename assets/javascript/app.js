@@ -1,10 +1,10 @@
-var topics = ["astronomy","meteor shower","mercury","earth","jupiter","saturn","moon","nebula","cosmos","northern lights","space shuttle","astronaut","moon landing"];
+var topics = ["astronomy","meteor shower","earth","jupiter","saturn","moon","nebula","cosmos","space shuttle","astronaut"];
 
 function renderButtons() {
   $(".gif-buttons").empty();
   for (i = 0; i < topics.length; i++) {
     var newButton = $("<button>");
-    newButton.attr("class", "button");
+    newButton.attr("class", "button search-button");
     newButton.attr("value", topics[i]);
     newButton.text(topics[i]);
     $(".gif-buttons").append(newButton);
@@ -66,6 +66,6 @@ function displayNatureGifs() {
     });
 
 };
-$(document).on("click", ".button", displayNatureGifs);
+$(document).on("click", ".search-button", displayNatureGifs);
 $(document).on("click", ".gif-image", animateGif);
 renderButtons();

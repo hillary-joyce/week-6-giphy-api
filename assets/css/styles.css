@@ -1,3 +1,20 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url("../images/background.jpg");
+}
+
+.jumbotron {
+  height: 150px;
+  padding: 0rem 2rem;
+  color: white;
+  background-color: none;
+  background: linear-gradient(black, transparent);
+}
+
+h1{
+  font-family: 'Audiowide', cursive;
+}
+
 .new-gif-div {
   position: relative;
   display: inline-block;
@@ -16,11 +33,38 @@
 
 .gif-image {
   margin: 5px;
+  box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.6);
 }
 
-.search-div, .results-div {
-  background: black;
+.search-div {
   color: white;
   padding: 5px;
+}
+
+/****** BUTTONS *******/
+.button {
+  background-color: rgba(0,0,0,0.5);
+  border: 2px solid white;
+  width: 100%;
+  color: white;
   border-radius: 10px;
+  padding: 2px;
+  box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.6);
+}
+
+.button:hover{
+  background-color: rgba(0,0,0,0.9);
+  border: 3px solid white;
+  box-shadow: 0px 0px 3px 4px rgba(255,255,255,0.6);
+}
+
+input {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+label {
+  margin-top: 10px;
+
 }
